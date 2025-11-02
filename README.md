@@ -1,70 +1,213 @@
-# Getting Started with Create React App
+# 🎓 Study Platform
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+A modern, full-stack quiz application built with React and Node.js. Practice with multiple-choice questions, track your progress with detailed analytics, and manage your question bank with an intuitive interface.
 
-## Available Scripts
+![Study Platform](https://img.shields.io/badge/React-18.3.1-blue)
+![Node.js](https://img.shields.io/badge/Node.js-16+-green)
+![License](https://img.shields.io/badge/license-MIT-blue)
 
-In the project directory, you can run:
+## ✨ Features
 
-### `npm start`
+### 🎯 Quiz System
+- **Random Question Selection** - Each quiz session presents unique questions
+- **No Duplicates** - Questions appear only once per session until all are answered
+- **Shuffled Answers** - Answer positions randomized to prevent memorization
+- **Real-time Feedback** - Instant validation when you submit an answer
+- **Progress Tracking** - See your accuracy and correct answers as you go
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+### 📊 Analytics Dashboard
+- **Live Updates** - Analytics refresh automatically every 5 seconds
+- **Session Statistics** - Track your current quiz session performance
+- **Overall Performance** - View your historical accuracy and progress
+- **Detailed Reports** - Identify questions you struggle with
+- **Mistake Analysis** - Learn from incorrect answers with breakdown by question
+- **Restart Function** - Clear all analytics data to start fresh
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+### 🗂️ Question Management
+- **Add Questions** - Create new multiple-choice questions with 4 options
+- **Edit Questions** - Update question text and answers inline
+- **Delete Questions** - Remove questions with cascade deletion
+- **Immediate Updates** - Changes reflect instantly without page reload
+- **View All Questions** - Browse your complete question bank
 
-### `npm test`
+### 🎨 User Experience
+- **Modern UI** - Clean, gradient-based design with smooth animations
+- **Responsive** - Works on desktop, tablet, and mobile devices
+- **Dark Theme** - Eye-friendly color scheme
+- **Progress Indicators** - Visual bars show your accuracy
+- **Completion Screen** - Comprehensive results after finishing all questions
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## 🚀 Quick Start
 
-### `npm run build`
+### Prerequisites
+- Node.js (v16 or higher)
+- npm or yarn
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+### Installation
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+1. **Clone the repository**
+```bash
+git clone https://github.com/yourusername/study-platform.git
+cd study-platform
+```
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+2. **Install backend dependencies**
+```bash
+cd backend
+npm install
+```
 
-### `npm run eject`
+3. **Install frontend dependencies**
+```bash
+cd ../frontend
+npm install
+```
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+4. **Start the backend server** (Terminal 1)
+```bash
+cd backend
+npm start
+```
+The backend will run on `http://localhost:5001`
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+5. **Start the frontend** (Terminal 2)
+```bash
+cd frontend
+npm start
+```
+The frontend will open at `http://localhost:3000`
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+## 📁 Project Structure
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+```
+study_platform/
+├── backend/                 # Node.js/Express backend
+│   ├── config/             # Database configuration
+│   ├── controllers/        # Route controllers
+│   ├── models/             # Sequelize models
+│   ├── routes/             # API routes
+│   ├── utils/              # Utility functions
+│   ├── server.js           # Express server
+│   └── package.json
+├── frontend/               # React frontend
+│   ├── public/             # Static files
+│   ├── src/
+│   │   ├── components/     # React components
+│   │   ├── hooks/          # Custom React hooks
+│   │   ├── pages/          # Page components
+│   │   ├── services/       # API services
+│   │   ├── styles/         # CSS styles
+│   │   └── App.jsx         # Main App component
+│   └── package.json
+└── database/               # SQL migrations and seeds
+```
 
-## Learn More
+## 🛠️ Technology Stack
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+### Frontend
+- **React 18.3** - UI framework
+- **React Router 6** - Navigation
+- **CSS3** - Styling with gradients and animations
+- **Fetch API** - HTTP requests
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+### Backend
+- **Node.js** - Runtime environment
+- **Express** - Web framework
+- **Sequelize** - ORM for database
+- **SQLite** - Database (development)
+- **CORS** - Cross-origin resource sharing
 
-### Code Splitting
+## 📖 Usage
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+### Taking a Quiz
+1. Navigate to **Quiz** page
+2. Answer questions by clicking on options
+3. View immediate feedback (correct/incorrect)
+4. Click "Next Question" to continue
+5. After completing all questions, view your detailed results
 
-### Analyzing the Bundle Size
+### Managing Questions
+1. Go to **Add Question** to create new questions
+2. Fill in the question text and 4 answer options
+3. Mark the correct answer with the radio button
+4. Click **Manage** to edit or delete existing questions
+5. Edit inline by clicking the Edit button
+6. Changes save immediately
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+### Viewing Analytics
+1. Click **Analytics** to see your performance
+2. View overall statistics and accuracy
+3. See detailed breakdown by question
+4. Identify areas for improvement
+5. Use **Restart** button to clear data and start fresh
 
-### Making a Progressive Web App
+## 🔧 Configuration
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+### Backend Configuration
+Edit `/backend/config/config.js`:
+```javascript
+module.exports = {
+  db: {
+    dialect: 'sqlite',  // or 'mysql', 'postgres'
+    storage: './database.sqlite',
+    logging: false
+  },
+  server: {
+    port: 5001
+  }
+};
+```
 
-### Advanced Configuration
+### Frontend Configuration
+Edit `/frontend/src/services/api.js`:
+```javascript
+const BASE_URL = process.env.REACT_APP_API_URL || 'http://localhost:5001';
+```
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+## 🎯 API Endpoints
 
-### Deployment
+### Quiz
+- `GET /api/quiz/question?exclude=1,2,3` - Get random question
+- `POST /api/quiz/answer` - Submit answer
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+### Questions
+- `GET /api/questions` - Get all questions
+- `POST /api/questions/add` - Add new question
+- `PUT /api/questions/:id` - Update question
+- `DELETE /api/questions/:id` - Delete question
 
-### `npm run build` fails to minify
+### Analytics
+- `GET /api/analytics/summary/:userId` - Get summary statistics
+- `GET /api/analytics/report/:userId` - Get detailed report
+- `DELETE /api/analytics/clear/:userId` - Clear user data
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+## 🤝 Contributing
+
+Contributions are welcome! Please feel free to submit a Pull Request.
+
+1. Fork the repository
+2. Create your feature branch (`git checkout -b feature/AmazingFeature`)
+3. Commit your changes (`git commit -m 'Add some AmazingFeature'`)
+4. Push to the branch (`git push origin feature/AmazingFeature`)
+5. Open a Pull Request
+
+## 📝 License
+
+This project is licensed under the MIT License - see the LICENSE file for details.
+
+## 🙏 Acknowledgments
+
+- Built with Create React App
+- Icons from emoji set
+- Inspired by modern quiz applications
+
+## 📧 Contact
+
+Your Name - [@yourtwitter](https://twitter.com/yourtwitter)
+
+Project Link: [https://github.com/yourusername/study-platform](https://github.com/yourusername/study-platform)
+
+---
+
+Made with ❤️ and ☕
+

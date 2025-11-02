@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CopilotDiffPersistence">
+    <option name="pendingDiffs">
+      <map>
+        <entry key="$PROJECT_DIR$/.gitignore">
+          <value>
+            <PendingDiffInfo>
+              <option name="filePath" value="$PROJECT_DIR$/.gitignore" />
+              <option name="updatedContent" value="# Dependencies&#10;node_modules/&#10;package-lock.json&#10;&#10;# Environment variables&#10;.env&#10;.env.local&#10;.env.development.local&#10;.env.test.local&#10;.env.production.local&#10;&#10;# Database&#10;*.sqlite&#10;*.db&#10;&#10;# Logs&#10;npm-debug.log*&#10;yarn-debug.log*&#10;yarn-error.log*&#10;lerna-debug.log*&#10;&#10;# OS&#10;.DS_Store&#10;.DS_Store?&#10;._*&#10;.Spotlight-V100&#10;.Trashes&#10;ehthumbs.db&#10;Thumbs.db&#10;&#10;# IDE&#10;.vscode/&#10;.idea/&#10;*.swp&#10;*.swo&#10;*~&#10;&#10;# Build outputs&#10;/frontend/build&#10;/backend/dist&#10;/backend/.cache&#10;&#10;# Testing&#10;/coverage&#10;.nyc_output&#10;&#10;# Misc&#10;*.log&#10;.cache&#10;" />
+            </PendingDiffInfo>
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/GITHUB_UPLOAD_GUIDE.md">
+          <value>
+            <PendingDiffInfo>
+              <option name="filePath" value="$PROJECT_DIR$/GITHUB_UPLOAD_GUIDE.md" />
+              <option name="updatedContent" value="#  Upload to GitHub Guide&#10;&#10;## Step 1: Initialize Git Repository&#10;&#10;Open terminal in your project folder and run:&#10;&#10;```bash&#10;cd /Users/tzachhondiashvili/Desktop/study_platform&#10;git init&#10;```&#10;&#10;## Step 2: Add All Files&#10;&#10;```bash&#10;git add .&#10;```&#10;&#10;## Step 3: Create Initial Commit&#10;&#10;```bash&#10;git commit -m &quot;Initial commit: Study Platform with quiz, analytics, and question management&quot;&#10;```&#10;&#10;## Step 4: Create GitHub Repository&#10;&#10;1. Go to [GitHub](https://github.com)&#10;2. Click the **+** icon in the top right&#10;3. Select **New repository**&#10;4. Enter repository name: `study-platform` (or your preferred name)&#10;5. Add description: &quot;A modern quiz application with analytics and question management&quot;&#10;6. Choose **Public** or **Private**&#10;7. **DO NOT** initialize with README, .gitignore, or license (we already have these)&#10;8. Click **Create repository**&#10;&#10;## Step 5: Link to GitHub and Push&#10;&#10;GitHub will show you commands. Use these:&#10;&#10;```bash&#10;# Add the remote repository&#10;git remote add origin https://github.com/YOUR_USERNAME/study-platform.git&#10;&#10;# Rename branch to main (if needed)&#10;git branch -M main&#10;&#10;# Push to GitHub&#10;git push -u origin main&#10;```&#10;&#10;**Replace `YOUR_USERNAME` with your actual GitHub username!**&#10;&#10;## Step 6: Verify Upload&#10;&#10;1. Refresh your GitHub repository page&#10;2. You should see all your files uploaded&#10;3. README.md will be displayed automatically&#10;&#10;##  Done!&#10;&#10;Your project is now on GitHub at:&#10;`https://github.com/YOUR_USERNAME/study-platform`&#10;&#10;---&#10;&#10;##  Optional: Update README&#10;&#10;Before pushing, you may want to update these in README.md:&#10;- Replace `yourusername` with your GitHub username&#10;- Add your Twitter handle or remove that section&#10;- Add your name in the Contact section&#10;- Update the LICENSE file with your name&#10;&#10;---&#10;&#10;##  Future Updates&#10;&#10;When you make changes to your code:&#10;&#10;```bash&#10;# Check what changed&#10;git status&#10;&#10;# Add changed files&#10;git add .&#10;&#10;# Commit with a message&#10;git commit -m &quot;Description of what you changed&quot;&#10;&#10;# Push to GitHub&#10;git push&#10;```&#10;&#10;---&#10;&#10;##  Troubleshooting&#10;&#10;### &quot;remote origin already exists&quot;&#10;```bash&#10;git remote remove origin&#10;git remote add origin https://github.com/YOUR_USERNAME/study-platform.git&#10;```&#10;&#10;### Authentication issues&#10;GitHub now requires a Personal Access Token instead of password:&#10;1. Go to GitHub Settings → Developer settings → Personal access tokens&#10;2. Generate new token (classic)&#10;3. Select scopes: `repo` (full control)&#10;4. Use the token as your password when pushing&#10;&#10;Or set up SSH keys:&#10;```bash&#10;ssh-keygen -t ed25519 -C &quot;your_email@example.com&quot;&#10;cat ~/.ssh/id_ed25519.pub&#10;# Copy the output and add to GitHub Settings → SSH Keys&#10;```&#10;&#10;Then use SSH URL:&#10;```bash&#10;git remote set-url origin git@github.com:YOUR_USERNAME/study-platform.git&#10;```&#10;&#10;---&#10;&#10;##  What's Already Done&#10;&#10;✅ Created `.gitignore` - Excludes node_modules, database, and other files&#10;✅ Created comprehensive `README.md` - Full documentation&#10;✅ Created `LICENSE` - MIT License&#10;✅ All your code is ready to push&#10;&#10;##  Next Steps After Upload&#10;&#10;1. **Add a screenshot** - Take a screenshot of your app and add it to README&#10;2. **Set up GitHub Pages** (optional) - Deploy the frontend&#10;3. **Add topics** - In GitHub repo settings, add topics like: `react`, `nodejs`, `quiz-app`, `education`&#10;4. **Star your repo** - Give yourself a star! ⭐&#10;&#10;---&#10;&#10;Need help? The commands are ready to copy-paste!&#10;" />
+            </PendingDiffInfo>
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/LICENSE">
+          <value>
+            <PendingDiffInfo>
+              <option name="filePath" value="$PROJECT_DIR$/LICENSE" />
+              <option name="updatedContent" value="MIT License&#10;&#10;Copyright (c) 2025 [Your Name]&#10;&#10;Permission is hereby granted, free of charge, to any person obtaining a copy&#10;of this software and associated documentation files (the &quot;Software&quot;), to deal&#10;in the Software without restriction, including without limitation the rights&#10;to use, copy, modify, merge, publish, distribute, sublicense, and/or sell&#10;copies of the Software, and to permit persons to whom the Software is&#10;furnished to do so, subject to the following conditions:&#10;&#10;The above copyright notice and this permission notice shall be included in all&#10;copies or substantial portions of the Software.&#10;&#10;THE SOFTWARE IS PROVIDED &quot;AS IS&quot;, WITHOUT WARRANTY OF ANY KIND, EXPRESS OR&#10;IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,&#10;FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE&#10;AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER&#10;LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,&#10;OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE&#10;SOFTWARE.&#10;" />
+            </PendingDiffInfo>
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/README.md">
+          <value>
+            <PendingDiffInfo>
+              <option name="filePath" value="$PROJECT_DIR$/README.md" />
+              <option name="updatedContent" value="#  Study Platform&#10;&#10;A modern, full-stack quiz application built with React and Node.js. Practice with multiple-choice questions, track your progress with detailed analytics, and manage your question bank with an intuitive interface.&#10;&#10;![Study Platform](https://img.shields.io/badge/React-18.3.1-blue)&#10;![Node.js](https://img.shields.io/badge/Node.js-16+-green)&#10;![License](https://img.shields.io/badge/license-MIT-blue)&#10;&#10;## ✨ Features&#10;&#10;###  Quiz System&#10;- **Random Question Selection** - Each quiz session presents unique questions&#10;- **No Duplicates** - Questions appear only once per session until all are answered&#10;- **Shuffled Answers** - Answer positions randomized to prevent memorization&#10;- **Real-time Feedback** - Instant validation when you submit an answer&#10;- **Progress Tracking** - See your accuracy and correct answers as you go&#10;&#10;###  Analytics Dashboard&#10;- **Live Updates** - Analytics refresh automatically every 5 seconds&#10;- **Session Statistics** - Track your current quiz session performance&#10;- **Overall Performance** - View your historical accuracy and progress&#10;- **Detailed Reports** - Identify questions you struggle with&#10;- **Mistake Analysis** - Learn from incorrect answers with breakdown by question&#10;- **Restart Function** - Clear all analytics data to start fresh&#10;&#10;### ️ Question Management&#10;- **Add Questions** - Create new multiple-choice questions with 4 options&#10;- **Edit Questions** - Update question text and answers inline&#10;- **Delete Questions** - Remove questions with cascade deletion&#10;- **Immediate Updates** - Changes reflect instantly without page reload&#10;- **View All Questions** - Browse your complete question bank&#10;&#10;###  User Experience&#10;- **Modern UI** - Clean, gradient-based design with smooth animations&#10;- **Responsive** - Works on desktop, tablet, and mobile devices&#10;- **Dark Theme** - Eye-friendly color scheme&#10;- **Progress Indicators** - Visual bars show your accuracy&#10;- **Completion Screen** - Comprehensive results after finishing all questions&#10;&#10;##  Quick Start&#10;&#10;### Prerequisites&#10;- Node.js (v16 or higher)&#10;- npm or yarn&#10;&#10;### Installation&#10;&#10;1. **Clone the repository**&#10;```bash&#10;git clone https://github.com/yourusername/study-platform.git&#10;cd study-platform&#10;```&#10;&#10;2. **Install backend dependencies**&#10;```bash&#10;cd backend&#10;npm install&#10;```&#10;&#10;3. **Install frontend dependencies**&#10;```bash&#10;cd ../frontend&#10;npm install&#10;```&#10;&#10;4. **Start the backend server** (Terminal 1)&#10;```bash&#10;cd backend&#10;npm start&#10;```&#10;The backend will run on `http://localhost:5001`&#10;&#10;5. **Start the frontend** (Terminal 2)&#10;```bash&#10;cd frontend&#10;npm start&#10;```&#10;The frontend will open at `http://localhost:3000`&#10;&#10;##  Project Structure&#10;&#10;```&#10;study_platform/&#10;├── backend/                 # Node.js/Express backend&#10;│   ├── config/             # Database configuration&#10;│   ├── controllers/        # Route controllers&#10;│   ├── models/             # Sequelize models&#10;│   ├── routes/             # API routes&#10;│   ├── utils/              # Utility functions&#10;│   ├── server.js           # Express server&#10;│   └── package.json&#10;├── frontend/               # React frontend&#10;│   ├── public/             # Static files&#10;│   ├── src/&#10;│   │   ├── components/     # React components&#10;│   │   ├── hooks/          # Custom React hooks&#10;│   │   ├── pages/          # Page components&#10;│   │   ├── services/       # API services&#10;│   │   ├── styles/         # CSS styles&#10;│   │   └── App.jsx         # Main App component&#10;│   └── package.json&#10;└── database/               # SQL migrations and seeds&#10;```&#10;&#10;## ️ Technology Stack&#10;&#10;### Frontend&#10;- **React 18.3** - UI framework&#10;- **React Router 6** - Navigation&#10;- **CSS3** - Styling with gradients and animations&#10;- **Fetch API** - HTTP requests&#10;&#10;### Backend&#10;- **Node.js** - Runtime environment&#10;- **Express** - Web framework&#10;- **Sequelize** - ORM for database&#10;- **SQLite** - Database (development)&#10;- **CORS** - Cross-origin resource sharing&#10;&#10;##  Usage&#10;&#10;### Taking a Quiz&#10;1. Navigate to **Quiz** page&#10;2. Answer questions by clicking on options&#10;3. View immediate feedback (correct/incorrect)&#10;4. Click &quot;Next Question&quot; to continue&#10;5. After completing all questions, view your detailed results&#10;&#10;### Managing Questions&#10;1. Go to **Add Question** to create new questions&#10;2. Fill in the question text and 4 answer options&#10;3. Mark the correct answer with the radio button&#10;4. Click **Manage** to edit or delete existing questions&#10;5. Edit inline by clicking the Edit button&#10;6. Changes save immediately&#10;&#10;### Viewing Analytics&#10;1. Click **Analytics** to see your performance&#10;2. View overall statistics and accuracy&#10;3. See detailed breakdown by question&#10;4. Identify areas for improvement&#10;5. Use **Restart** button to clear data and start fresh&#10;&#10;##  Configuration&#10;&#10;### Backend Configuration&#10;Edit `/backend/config/config.js`:&#10;```javascript&#10;module.exports = {&#10;  db: {&#10;    dialect: 'sqlite',  // or 'mysql', 'postgres'&#10;    storage: './database.sqlite',&#10;    logging: false&#10;  },&#10;  server: {&#10;    port: 5001&#10;  }&#10;};&#10;```&#10;&#10;### Frontend Configuration&#10;Edit `/frontend/src/services/api.js`:&#10;```javascript&#10;const BASE_URL = process.env.REACT_APP_API_URL || 'http://localhost:5001';&#10;```&#10;&#10;##  API Endpoints&#10;&#10;### Quiz&#10;- `GET /api/quiz/question?exclude=1,2,3` - Get random question&#10;- `POST /api/quiz/answer` - Submit answer&#10;&#10;### Questions&#10;- `GET /api/questions` - Get all questions&#10;- `POST /api/questions/add` - Add new question&#10;- `PUT /api/questions/:id` - Update question&#10;- `DELETE /api/questions/:id` - Delete question&#10;&#10;### Analytics&#10;- `GET /api/analytics/summary/:userId` - Get summary statistics&#10;- `GET /api/analytics/report/:userId` - Get detailed report&#10;- `DELETE /api/analytics/clear/:userId` - Clear user data&#10;&#10;##  Contributing&#10;&#10;Contributions are welcome! Please feel free to submit a Pull Request.&#10;&#10;1. Fork the repository&#10;2. Create your feature branch (`git checkout -b feature/AmazingFeature`)&#10;3. Commit your changes (`git commit -m 'Add some AmazingFeature'`)&#10;4. Push to the branch (`git push origin feature/AmazingFeature`)&#10;5. Open a Pull Request&#10;&#10;##  License&#10;&#10;This project is licensed under the MIT License - see the LICENSE file for details.&#10;&#10;##  Acknowledgments&#10;&#10;- Built with Create React App&#10;- Icons from emoji set&#10;- Inspired by modern quiz applications&#10;&#10;##  Contact&#10;&#10;Your Name - [@yourtwitter](https://twitter.com/yourtwitter)&#10;&#10;Project Link: [https://github.com/yourusername/study-platform](https://github.com/yourusername/study-platform)&#10;&#10;---&#10;&#10;Made with ❤️ and ☕&#10;" />
+            </PendingDiffInfo>
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/backend/middleware/errorHandler.js">
+          <value>
+            <PendingDiffInfo>
+              <option name="filePath" value="$PROJECT_DIR$/backend/middleware/errorHandler.js" />
+              <option name="updatedContent" value="// Centralized error handler&#10;module.exports = (err, req, res, next) =&gt; {&#10;  // eslint-disable-next-line no-console&#10;  console.error(err);&#10;  const status = err.status || 500;&#10;  const message = err.message || 'Internal Server Error';&#10;  res.status(status).json({ error: message });&#10;};&#10;" />
+            </PendingDiffInfo>
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/backend/models/Answer.js">
+          <value>
+            <PendingDiffInfo>
+              <option name="filePath" value="$PROJECT_DIR$/backend/models/Answer.js" />
+              <option name="updatedContent" value="const { DataTypes } = require('sequelize');&#10;const sequelize = require('../config/database');&#10;const Question = require('./Question');&#10;&#10;const Answer = sequelize.define('Answer', {&#10;  id: {&#10;    type: DataTypes.INTEGER,&#10;    autoIncrement: true,&#10;    primaryKey: true,&#10;  },&#10;  text: {&#10;    type: DataTypes.STRING,&#10;    allowNull: false,&#10;  },&#10;  isCorrect: {&#10;    type: DataTypes.BOOLEAN,&#10;    allowNull: false,&#10;  },&#10;  questionId: {&#10;    type: DataTypes.INTEGER,&#10;    references: {&#10;      model: Question,&#10;      key: 'id',&#10;    },&#10;    allowNull: false,&#10;  },&#10;});&#10;&#10;module.exports = Answer;&#10;" />
+            </PendingDiffInfo>
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/backend/models/Question.js">
+          <value>
+            <PendingDiffInfo>
+              <option name="filePath" value="$PROJECT_DIR$/backend/models/Question.js" />
+              <option name="originalContent" value="&#10;" />
+              <option name="updatedContent" value="const { DataTypes } = require('sequelize');&#10;const sequelize = require('../config/database');&#10;&#10;const Question = sequelize.define('Question', {&#10;  id: {&#10;    type: DataTypes.INTEGER,&#10;    autoIncrement: true,&#10;    primaryKey: true,&#10;  },&#10;  text: {&#10;    type: DataTypes.STRING,&#10;    allowNull: false,&#10;  },&#10;  createdBy: {&#10;    type: DataTypes.INTEGER,&#10;    allowNull: true,&#10;    defaultValue: 0,&#10;  },&#10;});&#10;&#10;module.exports = Question;" />
+            </PendingDiffInfo>
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/backend/models/User.js">
+          <value>
+            <PendingDiffInfo>
+              <option name="filePath" value="$PROJECT_DIR$/backend/models/User.js" />
+              <option name="updatedContent" value="const { DataTypes } = require('sequelize');&#10;const sequelize = require('../config/database');&#10;&#10;const User = sequelize.define('User', {&#10;  id: {&#10;    type: DataTypes.INTEGER,&#10;    autoIncrement: true,&#10;    primaryKey: true,&#10;  },&#10;  name: {&#10;    type: DataTypes.STRING,&#10;    allowNull: false,&#10;  },&#10;  email: {&#10;    type: DataTypes.STRING,&#10;    allowNull: false,&#10;    unique: true,&#10;    validate: {&#10;      isEmail: true,&#10;    },&#10;  },&#10;});&#10;&#10;module.exports = User;&#10;" />
+            </PendingDiffInfo>
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/backend/models/UserAttempt.js">
+          <value>
+            <PendingDiffInfo>
+              <option name="filePath" value="$PROJECT_DIR$/backend/models/UserAttempt.js" />
+              <option name="originalContent" value="&#10;" />
+              <option name="updatedContent" value="const { DataTypes } = require('sequelize');&#10;const sequelize = require('../config/database');&#10;&#10;const UserAttempt = sequelize.define('UserAttempt', {&#10;  id: {&#10;    type: DataTypes.INTEGER,&#10;    autoIncrement: true,&#10;    primaryKey: true,&#10;  },&#10;  userId: {&#10;    type: DataTypes.INTEGER,&#10;    allowNull: true,&#10;    defaultValue: 0,&#10;  },&#10;  questionId: {&#10;    type: DataTypes.INTEGER,&#10;    allowNull: false,&#10;  },&#10;  answerId: {&#10;    type: DataTypes.INTEGER,&#10;    allowNull: false,&#10;  },&#10;  isCorrect: {&#10;    type: DataTypes.BOOLEAN,&#10;    allowNull: false,&#10;  },&#10;  attemptedAt: {&#10;    type: DataTypes.DATE,&#10;    defaultValue: DataTypes.NOW,&#10;  },&#10;});&#10;&#10;module.exports = UserAttempt;" />
+            </PendingDiffInfo>
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/backend/models/index.js">
+          <value>
+            <PendingDiffInfo>
+              <option name="filePath" value="$PROJECT_DIR$/backend/models/index.js" />
+              <option name="updatedContent" value="// Centralize model initialization and associations&#10;const sequelize = require('../config/database');&#10;const Question = require('./Question');&#10;const Answer = require('./Answer');&#10;const UserAttempt = require('./UserAttempt');&#10;// Optional: if a User model is later added&#10;let User;&#10;try {&#10;  // eslint-disable-next-line global-require&#10;  User = require('./User');&#10;} catch (_) {&#10;  User = null;&#10;}&#10;&#10;// Associations&#10;Question.hasMany(Answer, {&#10;  foreignKey: 'questionId',&#10;  as: 'answers',&#10;  onDelete: 'CASCADE',&#10;});&#10;Answer.belongsTo(Question, { foreignKey: 'questionId', as: 'question' });&#10;&#10;// Attempts associations&#10;UserAttempt.belongsTo(Question, { foreignKey: 'questionId', as: 'question' });&#10;UserAttempt.belongsTo(Answer, { foreignKey: 'answerId', as: 'answer' });&#10;if (User) {&#10;  UserAttempt.belongsTo(User, { foreignKey: 'userId', as: 'user' });&#10;}&#10;&#10;module.exports = {&#10;  sequelize,&#10;  Question,&#10;  Answer,&#10;  UserAttempt,&#10;  ...(User ? { User } : {}),&#10;};&#10;" />
+            </PendingDiffInfo>
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/backend/routes/quizRoutes.js">
+          <value>
+            <PendingDiffInfo>
+              <option name="filePath" value="$PROJECT_DIR$/backend/routes/quizRoutes.js" />
+              <option name="originalContent" value="&#10;" />
+              <option name="updatedContent" value="const express = require('express');&#10;const router = express.Router();&#10;const quizController = require('../controllers/quizController');&#10;&#10;// Get a random quiz question&#10;router.get('/question', quizController.getQuizQuestion);&#10;&#10;// Submit an answer&#10;router.post('/answer', quizController.submitAnswer);&#10;&#10;module.exports = router;" />
+            </PendingDiffInfo>
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/backend/server.js">
+          <value>
+            <PendingDiffInfo>
+              <option name="filePath" value="$PROJECT_DIR$/backend/server.js" />
+              <option name="originalContent" value="&#10;&#10;" />
+              <option name="updatedContent" value="const express = require('express');&#10;const app = express();&#10;const bodyParser = require('body-parser');&#10;const cors = require('cors');&#10;const { sequelize } = require('./models');&#10;const questionRoutes = require('./routes/questionRoutes');&#10;const quizRoutes = require('./routes/quizRoutes');&#10;const analyticsRoutes = require('./routes/analyticsRoutes');&#10;const errorHandler = require('./middleware/errorHandler');&#10;&#10;app.use(cors());&#10;app.use(bodyParser.json());&#10;&#10;// API routes&#10;app.use('/api/questions', questionRoutes);&#10;app.use('/api/quiz', quizRoutes);&#10;app.use('/api/analytics', analyticsRoutes);&#10;&#10;// Health check&#10;app.get('/', (req, res) =&gt; res.send('Study Platform API running'));&#10;&#10;// Error handling middleware (last)&#10;app.use(errorHandler);&#10;&#10;const PORT = process.env.PORT || 5000;&#10;(async () =&gt; {&#10;  try {&#10;    await sequelize.authenticate();&#10;    // For development convenience; consider using migrations for production&#10;    await sequelize.sync();&#10;    app.listen(PORT, () =&gt; console.log(`Server running on port ${PORT}`));&#10;  } catch (err) {&#10;    // eslint-disable-next-line no-console&#10;    console.error('Failed to start server:', err);&#10;    process.exit(1);&#10;  }&#10;})();" />
+            </PendingDiffInfo>
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/backend/utils/calculateScore.js">
+          <value>
+            <PendingDiffInfo>
+              <option name="filePath" value="$PROJECT_DIR$/backend/utils/calculateScore.js" />
+              <option name="updatedContent" value="// Compute basic score statistics from a list of attempts&#10;module.exports = function calculateScore(attempts = []) {&#10;  const total = attempts.length;&#10;  const correct = attempts.filter((a) =&gt; !!a.isCorrect).length;&#10;  const incorrect = total - correct;&#10;  const accuracy = total ? correct / total : 0;&#10;&#10;  // Calculate current and longest correct streaks based on attemptedAt order (assumed DESC in consumers)&#10;  let currentStreak = 0;&#10;  let longestStreak = 0;&#10;  // Sort ascending by attemptedAt for streak calculation&#10;  const ordered = [...attempts].sort((a, b) =&gt; new Date(a.attemptedAt) - new Date(b.attemptedAt));&#10;  for (const at of ordered) {&#10;    if (at.isCorrect) {&#10;      currentStreak += 1;&#10;      longestStreak = Math.max(longestStreak, currentStreak);&#10;    } else {&#10;      currentStreak = 0;&#10;    }&#10;  }&#10;&#10;  return { total, correct, incorrect, accuracy, longestStreak };&#10;};&#10;" />
+            </PendingDiffInfo>
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/backend/utils/generateReport.js">
+          <value>
+            <PendingDiffInfo>
+              <option name="filePath" value="$PROJECT_DIR$/backend/utils/generateReport.js" />
+              <option name="updatedContent" value="// Build a detailed analytics report from an array of attempts&#10;module.exports = function generateReport(attempts = []) {&#10;  const byQuestion = new Map();&#10;&#10;  for (const a of attempts) {&#10;    const qId = a.questionId;&#10;    const entry = byQuestion.get(qId) || {&#10;      questionId: qId,&#10;      questionText: a.question?.text || '',&#10;      attempts: 0,&#10;      correct: 0,&#10;      lastAttemptedAt: null,&#10;      lastAnswer: a.answer ? { id: a.answer.id, text: a.answer.text, isCorrect: a.answer.isCorrect } : null,&#10;      mistakes: {},&#10;    };&#10;    entry.attempts += 1;&#10;    if (a.isCorrect) entry.correct += 1;&#10;    if (!entry.lastAttemptedAt || new Date(a.attemptedAt) &gt; new Date(entry.lastAttemptedAt)) {&#10;      entry.lastAttemptedAt = a.attemptedAt;&#10;      entry.lastAnswer = a.answer ? { id: a.answer.id, text: a.answer.text, isCorrect: a.answer.isCorrect } : entry.lastAnswer;&#10;    }&#10;    if (a.answer &amp;&amp; !a.isCorrect) {&#10;      entry.mistakes[a.answer.text] = (entry.mistakes[a.answer.text] || 0) + 1;&#10;    }&#10;    byQuestion.set(qId, entry);&#10;  }&#10;&#10;  const questions = Array.from(byQuestion.values()).map((q) =&gt; ({&#10;    ...q,&#10;    accuracy: q.attempts ? q.correct / q.attempts : 0,&#10;    topMistakes: Object.entries(q.mistakes)&#10;      .sort((a, b) =&gt; b[1] - a[1])&#10;      .slice(0, 3)&#10;      .map(([text, count]) =&gt; ({ text, count })),&#10;  }));&#10;&#10;  // Overall stats&#10;  const total = attempts.length;&#10;  const correct = attempts.filter((a) =&gt; a.isCorrect).length;&#10;  const incorrect = total - correct;&#10;  const accuracy = total ? correct / total : 0;&#10;&#10;  return {&#10;    total,&#10;    correct,&#10;    incorrect,&#10;    accuracy,&#10;    questions,&#10;  };&#10;};&#10;" />
+            </PendingDiffInfo>
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/backend/utils/shuffleAnswers.js">
+          <value>
+            <PendingDiffInfo>
+              <option name="filePath" value="$PROJECT_DIR$/backend/utils/shuffleAnswers.js" />
+              <option name="updatedContent" value="// Shuffle an array in place using Fisher-Yates algorithm&#10;function shuffleAnswers(answers) {&#10;  for (let i = answers.length - 1; i &gt; 0; i--) {&#10;    const j = Math.floor(Math.random() * (i + 1));&#10;    [answers[i], answers[j]] = [answers[j], answers[i]];&#10;  }&#10;  return answers;&#10;}&#10;&#10;module.exports = shuffleAnswers;&#10;" />
+            </PendingDiffInfo>
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/frontend/public/index.html">
+          <value>
+            <PendingDiffInfo>
+              <option name="filePath" value="$PROJECT_DIR$/frontend/public/index.html" />
+              <option name="updatedContent" value="&lt;!doctype html&gt;&#10;&lt;html lang=&quot;en&quot;&gt;&#10;  &lt;head&gt;&#10;    &lt;meta charset=&quot;utf-8&quot; /&gt;&#10;    &lt;meta name=&quot;viewport&quot; content=&quot;width=device-width, initial-scale=1&quot; /&gt;&#10;    &lt;title&gt;Study Platform&lt;/title&gt;&#10;  &lt;/head&gt;&#10;  &lt;body&gt;&#10;    &lt;noscript&gt;You need to enable JavaScript to run this app.&lt;/noscript&gt;&#10;    &lt;div id=&quot;root&quot;&gt;&lt;/div&gt;&#10;  &lt;/body&gt;&#10;&lt;/html&gt;&#10;" />
+            </PendingDiffInfo>
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/frontend/src/components/common/Button.jsx">
+          <value>
+            <PendingDiffInfo>
+              <option name="filePath" value="$PROJECT_DIR$/frontend/src/components/common/Button.jsx" />
+              <option name="updatedContent" value="import React from 'react';&#10;&#10;export default function Button({ children, variant = 'primary', disabled, onClick, type = 'button', style, ...rest }) {&#10;  const base = {&#10;    padding: '8px 12px',&#10;    borderRadius: 6,&#10;    border: '1px solid transparent',&#10;    cursor: disabled ? 'not-allowed' : 'pointer',&#10;    opacity: disabled ? 0.6 : 1,&#10;    background: variant === 'primary' ? '#2563eb' : '#e5e7eb',&#10;    color: variant === 'primary' ? '#fff' : '#111827',&#10;    ...style,&#10;  };&#10;  return (&#10;    &lt;button type={type} disabled={disabled} onClick={onClick} style={base} {...rest}&gt;&#10;      {children}&#10;    &lt;/button&gt;&#10;  );&#10;}&#10;" />
+            </PendingDiffInfo>
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/frontend/src/components/common/Header.jsx">
+          <value>
+            <PendingDiffInfo>
+              <option name="filePath" value="$PROJECT_DIR$/frontend/src/components/common/Header.jsx" />
+              <option name="updatedContent" value="import React from 'react';&#10;import { Link } from 'react-router-dom';&#10;&#10;export default function Header() {&#10;  return (&#10;    &lt;header style={{ borderBottom: '1px solid #e5e7eb', marginBottom: 12 }}&gt;&#10;      &lt;nav style={{ display: 'flex', gap: 12, padding: 12 }}&gt;&#10;        &lt;Link to=&quot;/&quot;&gt;Home&lt;/Link&gt;&#10;        &lt;Link to=&quot;/quiz&quot;&gt;Quiz&lt;/Link&gt;&#10;        &lt;Link to=&quot;/add&quot;&gt;Add Question&lt;/Link&gt;&#10;        &lt;Link to=&quot;/analytics&quot;&gt;Analytics&lt;/Link&gt;&#10;      &lt;/nav&gt;&#10;    &lt;/header&gt;&#10;  );&#10;}&#10;" />
+            </PendingDiffInfo>
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/frontend/src/components/common/Loader.jsx">
+          <value>
+            <PendingDiffInfo>
+              <option name="filePath" value="$PROJECT_DIR$/frontend/src/components/common/Loader.jsx" />
+              <option name="updatedContent" value="import React from 'react';&#10;&#10;export default function Loader({ label = 'Loading...' }) {&#10;  return (&#10;    &lt;div style={{ display: 'flex', alignItems: 'center', gap: 8 }}&gt;&#10;      &lt;div&#10;        aria-hidden&#10;        style={{&#10;          width: 16,&#10;          height: 16,&#10;          border: '2px solid #e5e7eb',&#10;          borderTopColor: '#2563eb',&#10;          borderRadius: '50%',&#10;          animation: 'spin 1s linear infinite',&#10;        }}&#10;      /&gt;&#10;      &lt;span&gt;{label}&lt;/span&gt;&#10;      &lt;style&gt;{'@keyframes spin { to { transform: rotate(360deg); } }'}&lt;/style&gt;&#10;    &lt;/div&gt;&#10;  );&#10;}&#10;" />
+            </PendingDiffInfo>
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/frontend/src/index.js">
+          <value>
+            <PendingDiffInfo>
+              <option name="filePath" value="$PROJECT_DIR$/frontend/src/index.js" />
+              <option name="updatedContent" value="import React from 'react';&#10;import { createRoot } from 'react-dom/client';&#10;import App from './App.jsx';&#10;&#10;const container = document.getElementById('root');&#10;const root = createRoot(container);&#10;root.render(&#10;  &lt;React.StrictMode&gt;&#10;    &lt;App /&gt;&#10;  &lt;/React.StrictMode&gt;&#10;);&#10;" />
+            </PendingDiffInfo>
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+</project>
